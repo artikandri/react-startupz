@@ -40,6 +40,8 @@ bundle install
 1. Open a new terminal. Type in `exe/dev` to start the jekyll server and the vite server.
 2. Alternatively, open a new terminal and start jekyll server by running `bundle exec jekyll serve`, then another new terminal and run `bin/vite dev`
 
+\*Note: in case the commands do not work, adding `bundle exec` before the command may solve the problem.
+
 ### Build the project
 
 1. Run `bundle exec jekyll build` to build the project
