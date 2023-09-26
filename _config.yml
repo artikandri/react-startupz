@@ -5,6 +5,8 @@ description: >
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://dashing-macaron-2898dd.netlify.app/" # the base hostname & protocol for your site
 github_username: artikandri
+plugins:
+  - jekyll/vite
 
 # Build settings
 markdown: kramdown
