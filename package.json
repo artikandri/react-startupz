@@ -8,6 +8,11 @@
       "email": "argikartika@gmail.com"
     }
   ],
+  "scripts": {
+    "jekyll-dev": "bin/jekyll-vite wait && bundle exec jekyll serve --livereload",
+    "dev": "bin/vite dev",
+    "build": "bin/vite build"
+  },
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.23.0",
