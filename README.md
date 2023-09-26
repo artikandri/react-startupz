@@ -29,13 +29,16 @@ Then, you can install the pre-requisites. To install the npm dependencies, run:
 npm i
 ```
 
+and
+
+```
+bundle install
+```
+
 ### Run the project
 
-1. Open a new terminal. Type in `jekyll server` to start the server. Your website is accessible on `http://localhost:4000` by default.
-2. Open another terminal. Type in `webpack -w` to watch changes in the `webpack` folder.
-3. Open another terminal. Type in `jekyll build -w` to watch changes in the `src` folder.
-
-\*Note: in case the commands do not work, adding `bundle exec` before the command may solve the problem.
+1. Open a new terminal. Type in `exe/dev` to start the jekyll server and the vite server.
+2. Alternatively, open a new terminal and start jekyll server by running `bundle exec jekyll serve`, then another new terminal and run `bin/vite dev`
 
 ### Build the project
 
