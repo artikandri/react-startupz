@@ -1,14 +1,17 @@
-import { defineConfig } from "vite";
+import { defineConfig, transformWithEsbuild } from "vite";
 import RubyPlugin from "vite-plugin-ruby";
 import react from "@vitejs/plugin-react";
 import vitePlugin from "vite-plugin-react-js-support";
-
 const fs = require("fs");
 
 export default defineConfig({
   esbuild: { loader: "jsx", include: /src\/.*\.jsx?$/, exclude: [] },
   optimizeDeps: {
+    force: true,
     esbuildOptions: {
+      loader: {
+        ".js": "jsx",
+      },
       plugins: [
         {
           name: "load-js-files-as-jsx",
