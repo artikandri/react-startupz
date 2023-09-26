@@ -35,6 +35,10 @@ npm i
 2. Open another terminal. Type in `webpack -w` to watch changes in the `webpack` folder.
 3. Open another terminal. Type in `jekyll build -w` to watch changes in the `src` folder.
 
+\*Note: in case the commands do not work, adding `bundle exec` before the command may solve the problem.
+
 ### Build the project
 
-// to do later
+1. Run `bundle exec jekyll build` to build the project
+
+This project is currently deployed to https://dashing-macaron-2898dd.netlify.app/ with the help of Netlify.
