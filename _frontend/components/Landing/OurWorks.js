@@ -4,6 +4,7 @@ import pc1 from "@/assets/images/pc1.png";
 import pc2 from "@/assets/images/pc2.png";
 import pc3 from "@/assets/images/pc3.png";
 import pc4 from "@/assets/images/pc4.png";
+import Button from "@/components/Button";
 
 const workData = [
   {
@@ -48,9 +49,16 @@ const WorkItem = ({ work }) => {
         src={work.image}
         alt={`Image for ${work.title}`}
       />
-      <button className="border-0 bg-white px-6 py-3 mt-6 font-bold no-underline rounded-full text-complementary-green ring-1 ring-complementary-green hover:-translate-y-0.5 transition-all hover:shadow-md">
+      <Button
+        type={"button"}
+        size={"sm"}
+        state={"secondary"}
+        name={"More"}
+        className={"mt-4 "}
+        aria-expanded="false"
+      >
         More
-      </button>
+      </Button>
     </div>
   );
 };

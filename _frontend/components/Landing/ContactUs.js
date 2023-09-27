@@ -15,13 +15,13 @@ const Contacts = ({ clickHandlerThanks }) => {
           <p className="text-xl md:text-2xl pt-7">
             Share your excitement with us.
           </p>
-          <div className="z-20 p-5 mt-5 md:pt-20 bg-whitesmoke md:w-128 rounded-2xl">
+          <div className="z-20 p-5 mt-5 md:pt-20 bg-whitesmoke rounded-2xl">
             <form className="flex flex-col justify-center gap-4 md:px-10">
               <label className="hidden" htmlFor="name">
                 Name*
               </label>
               <input
-                className="w-full px-5 py-3.5 font-medium border-0 shadow-lg text-lg rounded-xl text-darkslategray"
+                className="w-auto px-5 py-3.5 font-medium border-0 shadow-lg text-lg rounded-xl text-darkslategray"
                 type="name"
                 name="name"
                 id="name"
@@ -32,7 +32,7 @@ const Contacts = ({ clickHandlerThanks }) => {
                 Email*
               </label>
               <input
-                className="w-full px-5 py-3 text-lg font-medium border-0 shadow-lg rounded-xl text-darkslategray"
+                className="w-auto px-5 py-3 text-lg font-medium border-0 shadow-lg rounded-xl text-darkslategray"
                 type="email"
                 name="email"
                 id="email"
@@ -43,7 +43,7 @@ const Contacts = ({ clickHandlerThanks }) => {
                 Message*
               </label>
               <textarea
-                className="w-full px-5 py-3 text-lg border-0 shadow-lg font-roboto rounded-xl text-darkslategray"
+                className="w-auto px-5 py-3 text-lg border-0 shadow-lg font-roboto rounded-xl text-darkslategray"
                 name="message"
                 id="message"
                 cols="50"

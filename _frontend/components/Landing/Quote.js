@@ -7,7 +7,7 @@ const Quote = () => {
       <section className="container flex items-center justify-center px-6 pb-24 overflow-hidden md:pb-44">
         <div className="flex items-center justify-center gap-5 md:gap-10">
           <img className="w-14 " src={leftHand} alt="left hand ok" />
-          <h3 className="text-base md:text-2xl lg:text-4xl  lg:w-[800px] text-coral text-center">
+          <h3 className="text-base font-semibold md:text-2xl lg:text-4xl  lg:w-[800px] text-coral text-center">
             Startups create a world that actually is better. Any problem that
             can be solved, will be solved by a startup, and that is a huge
             opportunity.

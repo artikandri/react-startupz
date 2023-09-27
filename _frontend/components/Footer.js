@@ -20,25 +20,25 @@ const Footer = ({ clickHandlerAlert }) => {
           <h5 className="text-lg font-medium">Companies</h5>
           <div className="flex flex-col gap-4 pt-6 font-medium no-underline text-complementary-green">
             <a
-              className="transition-all hover:text-coral hover:font-medium"
+              className="transition-all hover:text-coral hover:font-medium text-complementary-green"
               href="https://tolq.com/"
             >
               Tolq
             </a>
             <a
-              className="transition-all hover:text-coral hover:font-medium"
+              className="transition-all hover:text-coral hover:font-medium text-complementary-green"
               href="https://legalsite.co/"
             >
               LegalSite
             </a>
             <a
-              className="transition-all hover:text-coral hover:font-medium"
+              className="transition-all hover:text-coral hover:font-medium text-complementary-green"
               href="https://codekeeper.co/index.html"
             >
               Codekeeper
             </a>
             <a
-              className="transition-all hover:text-coral hover:font-medium"
+              className="transition-all hover:text-coral hover:font-medium text-complementary-green"
               href="https://feedbacklabs.org/"
             >
               Feedback Labs
@@ -65,19 +65,19 @@ const Footer = ({ clickHandlerAlert }) => {
           <div className="flex flex-col gap-4 pt-3">
             <button
               onClick={clickHandlerAlert}
-              className="p-0 m-0 transition-all bg-transparent border-0 hover:invert"
+              className="p-0 m-0 transition-all bg-transparent border-0 hover:invert hover:cursor-pointer"
             >
               <img src={twitter} alt="tweeter" />
             </button>
             <button
               onClick={clickHandlerAlert}
-              className="p-0 m-0 transition-all bg-transparent border-0 hover:invert"
+              className="p-0 m-0 transition-all bg-transparent border-0 hover:invert hover:cursor-pointer"
             >
               <img src={Linkedin} alt="linkedin" />
             </button>
             <button
               onClick={clickHandlerAlert}
-              className="p-0 m-0 transition-all bg-transparent border-0 hover:invert"
+              className="p-0 m-0 transition-all bg-transparent border-0 hover:invert hover:cursor-pointer"
             >
               <img src={instagram} alt="Instagram" />
             </button>

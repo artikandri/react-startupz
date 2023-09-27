@@ -10,6 +10,7 @@
     name="description"
     content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}"
   />
+  <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico" />
   {% if page.url == "/404.html" %}
   <meta http-equiv="refresh" content="5; url=/" />
   {% endif %} <link rel="stylesheet" href="{{ "/css/main.css" | prepend:

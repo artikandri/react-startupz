@@ -21,6 +21,7 @@ const Hero = () => {
             <Button
               type={"button"}
               state={"primary"}
+              size={"lg"}
               name={"See our works"}
               className={"cta mt-4 "}
               aria-expanded="false"

@@ -7,6 +7,7 @@ url: "https://dashing-macaron-2898dd.netlify.app/"
 github_username: artikandri
 plugins:
   - jekyll/vite
+  - jekyll-seo-tag
 permalink: /404.html
 # Build settings
 markdown: kramdown

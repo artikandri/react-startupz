@@ -9,7 +9,7 @@ const WhoWeAre = () => {
           <div className="py-32">
             <div className="xl:px-[8rem] px-6 ">
               <h2 className="text-4xl md:text-5xl ">Who we are</h2>
-              <p className="pt-8 text-lg md:text-xl lg:text-2xl text-coral">
+              <p className="pt-8 font-semibold text-lg md:text-xl lg:text-2xl text-coral">
                 We create products that have innovation and technology at their
                 core. <br /> We value working with talented people that
                 understand the possibilities of today.

@@ -13,16 +13,16 @@ const Hiring = ({}) => {
           alt="Man on the left side of the section"
         />
         <div className="container flex justify-center">
-          <div className="flex flex-col justify-center items-center w-[440px] gap-8 md:py-24 lg:py-36">
+          <div className="flex flex-col justify-center items-center w-1/2 gap-8 md:py-24 lg:py-36">
             <h4 className="text-4xl lg:text-5xl">We are hiring!</h4>
-            <p className="text-xl font-medium text-center lg:text-2xl text-coral">
+            <p className="text-xl font-semibold text-center lg:text-2xl text-coral">
               We're always looking for talented people to join and help build
               our startups.
               <span className="block">Check out our current openings</span>
             </p>
             <Button
               type={"button"}
-              size={"sm"}
+              size={"lg"}
               state={"primary"}
               name={"See current openings"}
               aria-expanded="false"

@@ -8,7 +8,7 @@ const WeLoveSolvingProblems = () => {
       <section className="container flex items-center justify-center gap-10 py-32 overflow-hidden lg:py-44">
         <div className="flex items-center justify-center gap-2 md:gap-10">
           <img className="w-14 " src={leftHand} alt="left hand ok" />
-          <h3 className="text-xl md:text-3xl gl:text-5xl text-coral">
+          <h3 className="text-xl md:text-3xl font-semibold gl:text-5xl text-coral">
             We love solving problems!
           </h3>
           <img className="w-14 " src={rightHand} alt="right hand ok" />

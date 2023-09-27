@@ -4,9 +4,9 @@ import cx from "clsx";
 const styles = {
   state: (state = "primary") => {
     if (state === "primary") {
-      return "border-0 text-white bg-complementary-green ";
+      return "text-white bg-complementary-green ";
     } else if (state === "secondary") {
-      return "border-0 bg-white rounded-full ring-1 ring-complementary-green text-complementary-green";
+      return "bg-white rounded-full ring-1 ring-complementary-green text-complementary-green";
     }
   },
   size(size = "md") {
@@ -14,10 +14,12 @@ const styles = {
       return "px-3 py-2 ";
     } else if (size === "md") {
       return "px-4 py-3 ";
+    } else if (size === "lg") {
+      return "px-6 py-4 text-lg ";
     }
   },
   class: () => {
-    return "font-bold no-underline rounded-full  tracking-wider  transition-all hover:shadow-md";
+    return "border-0 font-bold no-underline rounded-full tracking-wider transition-all hover:shadow-md";
   },
 };
 
