@@ -19,5 +19,6 @@
   />
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}"
   href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}"> {%
-  vite_client_tag %} {% vite_javascript_tag application %}
+  vite_client_tag %} {% vite_javascript_tag application %} {%
+  vite_stylesheet_tag styles/index.scss %}
 </head>
