@@ -1,25 +1,25 @@
 import React, { useEffect, useState } from "react";
 import heroArt from "@/assets/images/hero.png";
-import { fadeInOnReadyElement } from "@/utils/animations";
+import { animationOnHeroMounted } from "@/utils/animations";
 
 const Hero = () => {
   useEffect(() => {
-    fadeInOnReadyElement("#hero", "--hide");
+    animationOnHeroMounted();
   });
   return (
     <>
-      <section className="relative h-[82dvh] overflow-hidden --hide" id="hero">
+      <section className="relative h-[82dvh] overflow-hidden" id="hero">
         <div className="container">
           <div className="flex flex-col items-start xl:px-[8rem] px-4 pt-16 md:pt-32">
-            <h1 className="m-0 font-bold text-darkslategray text-4xl md:text-[85px] leading-[85px] font-custom tracking-tight">
+            <h1 className="title m-0 font-bold text-darkslategray text-4xl md:text-[85px] leading-[85px] font-custom tracking-tight">
               We Create <br className="hidden md:block" /> Startups.
             </h1>
-            <p className="w-2/3 m-0 text-xl md:w-1/2 md:mt-8 md:text-2xl xl:w-full text-coral">
+            <p className="subtitle w-2/3 m-0 text-xl md:w-1/2 md:mt-8 md:text-2xl xl:w-full text-coral">
               We are startup studio that develops and launches new companies.
             </p>
             <a
-              href="#Startups"
-              className="px-6 py-4 mt-14 md:mt-6 font-bold text-white no-underline rounded-full bg-complementary-green tracking-wider hover:-translate-y-0.5 transition-all hover:shadow-md"
+              href="#OurWorks"
+              className="cta px-6 py-4 mt-14 md:mt-6 font-bold text-white no-underline rounded-full bg-complementary-green tracking-wider hover:-translate-y-0.5 transition-all hover:shadow-md"
             >
               See our works
             </a>

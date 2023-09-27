@@ -18,7 +18,7 @@ const Header = () => {
       <nav className="items-center hidden gap-12 mb-3 font-normal md:flex text-darkslategray">
         <a
           className="no-underline transition-all text-darkslategray hover:text-coral hover:font-medium"
-          href="#Startups"
+          href="#OurWorks"
         >
           Startups
         </a>
@@ -51,7 +51,7 @@ const Header = () => {
           <nav className="flex flex-col items-center gap-12 py-16 mb-3 font-normal text-complementary-green shadow-xl bg-white rounded-3xl backdrop-blur-md ">
             <a
               className="no-underline transition-all hover:text-coral hover:font-medium"
-              href="#Startups"
+              href="#OurWorks"
               onClick={onClickMenuItem}
             >
               Startups

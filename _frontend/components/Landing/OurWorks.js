@@ -62,7 +62,7 @@ export default function OurWorks() {
   return (
     <main
       className="container py-24 md:py-44 xl:px-[8rem] px-4 overflow-hidden"
-      id="startups"
+      id="OurWorks"
     >
       <h4 className="text-4xl text-center md:text-5xl">Our works</h4>
       <div className="grid gap-6 pt-16 lg:grid-cols-2">

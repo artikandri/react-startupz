@@ -9,20 +9,44 @@ export function fadeInOnReadyElement(selector, classToRemove) {
   });
 }
 
-export function animatePath(options = {}) {
-  const config = {
-    targets: "path",
-    strokeDashoffset: [anime.setDashoffset, 0],
-    easing: "easeInOutSine",
-    duration: 3000,
-    direction: "alternate",
-    loop: true,
-  };
+export function splitTextOnReadyElement(selector) {
+  var textWrapper = document.querySelector(selector);
+  textWrapper.innerHTML = textWrapper.textContent.replace(
+    /\S/g,
+    "<span class='letter'>$&</span>"
+  );
+}
+
+export function animationOnHeroMounted(options = {}) {
+  splitTextOnReadyElement(".title");
+  splitTextOnReadyElement(".subtitle");
+
+  const timeline = anime.timeline();
+  timeline
+    .add({
+      targets: ".title .letter",
+      scale: [4, 1],
+      opacity: [0, 1],
+      translateZ: 0,
+      easing: "easeOutExpo",
+      duration: 950,
+      delay: (el, i) => 70 * i,
+    })
+    .add({
+      targets: ".subtitle .letter",
+      opacity: [0, 1],
+      easing: "easeInOutQuad",
+      duration: 950,
+      delay: (el, i) => 20 * (i + 1),
+    })
+    .add({
+      targets: ".cta",
+      opacity: [0, 1],
+      easing: "easeInOutQuad",
+      duration: 1400,
+    });
 
   window.onload = function () {
-    anime({
-      ...config,
-      ...options,
-    });
+    timeline.play();
   };
 }
