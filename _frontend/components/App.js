@@ -1,15 +1,15 @@
-import { BrowserRouter as Router } from "react-router-dom";
 import Routes from "./Routes";
+import Header from "./Header";
+import Footer from "./Footer";
+import ChatButton from "./ChatButton";
 
 export default function App() {
   return (
     <>
-      <Router>
-        <div className="container mx-auto">
-          <h1 className="text-3xl font-bold text-center">Hello, world!</h1>
-        </div>
-      </Router>
+      <Header />
       <Routes />
+      <Footer />
+      <ChatButton />
     </>
   );
 }
