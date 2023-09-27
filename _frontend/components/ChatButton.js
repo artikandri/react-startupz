@@ -21,13 +21,16 @@ const ChatButton = () => {
   };
 
   return (
-    <div className="fixed z-50 bottom-8 right-8" title="Assistant button">
+    <div
+      className="fixed z-50 bottom-8 right-8 chat-button"
+      title="Chat button"
+    >
       <button
         onClick={togglePopup}
         className={`relative w-16 h-16 transition-all bg-white border-0 rounded-full shadow-xl md:w-32 md:h-32 ${
           showPopup ? "hover:bg-coral" : ""
         }`}
-        aria-label={showPopup ? "Close assistant" : "Open assistant"}
+        aria-label={showPopup ? "Close chat" : "Open chat"}
       >
         <div className="flex items-center justify-center">
           <img

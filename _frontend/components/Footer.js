@@ -3,7 +3,6 @@ import twitter from "@/assets/images/Vector.svg";
 import Linkedin from "@/assets/images/Linkedin.svg";
 import instagram from "@/assets/images/instagram.svg";
 
-// eslint-disable-next-line react/prop-types
 const Footer = ({ clickHandlerAlert }) => {
   return (
     <>
@@ -50,14 +49,12 @@ const Footer = ({ clickHandlerAlert }) => {
           <h5 className="text-lg font-medium">Contact</h5>
           <div className="flex flex-col">
             <p className="pt-3 font-light text-gray-400">
-              <i>
-                World Trade Center - The Hague <br /> Prinses Margrietplantsoen
-                33 <br /> 2595 AM The Hague <br /> The Netherlands
-              </i>
+              World Trade Center - The Hague <br /> Prinses Margrietplantsoen 33{" "}
+              <br /> 2595 AM The Hague <br /> The Netherlands
             </p>
             <a
               className="pt-5 font-medium transition-all text-complementary-green hover:text-coral hover:font-medium"
-              href="#Work"
+              href="mailto:startupz@startupz.com"
             >
               Send us an email
             </a>

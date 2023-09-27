@@ -1,5 +1,6 @@
 import React from "react";
 import Hero from "@/components/Landing/Hero";
+import FadeInSection from "@/components/FadeInSection";
 import WhoWeAre from "@/components/Landing/WhoWeAre.js";
 import ContactUs from "@/components/Landing/ContactUs";
 import Hiring from "@/components/Landing/Hiring";
@@ -12,13 +13,27 @@ const Landing = () => {
   return (
     <>
       <Hero />
-      <WhoWeAre />
-      <WeLoveSolvingProblems />
-      <OurCoreValues />
-      <OurWorks />
-      <Quote />
-      <Hiring />
-      <ContactUs />
+      <FadeInSection>
+        <WhoWeAre />
+      </FadeInSection>
+      <FadeInSection>
+        <WeLoveSolvingProblems />
+      </FadeInSection>
+      <FadeInSection>
+        <OurCoreValues />
+      </FadeInSection>
+      <FadeInSection>
+        <OurWorks />
+      </FadeInSection>
+      <FadeInSection>
+        <Quote />
+      </FadeInSection>
+      <FadeInSection>
+        <Hiring />
+      </FadeInSection>
+      <FadeInSection>
+        <ContactUs />
+      </FadeInSection>
     </>
   );
 };

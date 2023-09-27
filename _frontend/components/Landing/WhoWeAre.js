@@ -46,7 +46,11 @@ const WhoWeAre = () => {
           </div>
 
           <div className="absolute right-16 xl:right-36 top-16 xl:top-32">
-            <img className="w-20 " src={questionMark} alt="Question Mark" />
+            <img
+              className="w-20 question-mark"
+              src={questionMark}
+              alt="Question Mark"
+            />
           </div>
         </div>
       </section>

@@ -30,7 +30,7 @@ const OurCoreValues = () => {
             </div>
           </div>
           <div className="absolute right-8 top-8 lg:right-36 md:right-16 lg:top-28 md:top-16">
-            <img className="w-24" src={lamp} alt="lamp Mark" />
+            <img className="w-24 lamp-icon" src={lamp} alt="lamp Mark" />
           </div>
         </div>
       </section>

@@ -1,10 +1,14 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import heroArt from "@/assets/images/hero.png";
+import { fadeInOnReadyElement } from "@/utils/animations";
 
 const Hero = () => {
+  useEffect(() => {
+    fadeInOnReadyElement("#hero", "--hide");
+  });
   return (
     <>
-      <section className="relative h-[82dvh] overflow-hidden">
+      <section className="relative h-[82dvh] overflow-hidden --hide" id="hero">
         <div className="container">
           <div className="flex flex-col items-start xl:px-[8rem] px-4 pt-16 md:pt-32">
             <h1 className="m-0 font-bold text-darkslategray text-4xl md:text-[85px] leading-[85px] font-custom tracking-tight">

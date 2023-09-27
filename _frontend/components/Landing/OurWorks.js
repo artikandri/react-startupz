@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import PropTypes from "prop-types";
 import img1 from "@/assets/images/img1.png";
 import img2 from "@/assets/images/img2.png";
@@ -58,11 +58,11 @@ WorkItem.propTypes = {
   work: PropTypes.object.isRequired,
 };
 
-const OurWorks = () => {
+export default function OurWorks() {
   return (
     <main
       className="container py-24 md:py-44 xl:px-[8rem] px-4 overflow-hidden"
-      id="Startups"
+      id="startups"
     >
       <h4 className="text-4xl text-center md:text-5xl">Our works</h4>
       <div className="grid gap-6 pt-16 lg:grid-cols-2">
@@ -72,6 +72,4 @@ const OurWorks = () => {
       </div>
     </main>
   );
-};
-
-export default OurWorks;
+}
