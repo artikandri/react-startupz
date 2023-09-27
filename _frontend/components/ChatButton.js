@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import AssistantImage from "@/assets/images/assistant.png";
 import CloseIcon from "@/assets/images/close.svg";
+import ChatBot from "./ChatBot/ChatBot";
 
 const ChatPopup = () => {
   return (
@@ -21,26 +22,32 @@ const ChatButton = () => {
   };
 
   return (
-    <div
-      className="fixed z-50 bottom-8 right-8 chat-button"
-      title="Chat button"
-    >
-      <button
-        onClick={togglePopup}
-        className={`relative w-16 h-16 transition-all bg-white border-0 rounded-full shadow-xl md:w-32 md:h-32 ${
-          showPopup ? "hover:bg-coral" : ""
+    <div>
+      <div
+        className={`fixed z-50 bottom-8 right-8 chat-button ${
+          showPopup ? "--active" : "--inactive"
         }`}
-        aria-label={showPopup ? "Close chat" : "Open chat"}
+        title="Chat button"
       >
-        <div className="flex items-center justify-center">
-          <img
-            className="rounded-full w-14 h-14 md:w-28 md:h-28"
-            src={showPopup ? CloseIcon : AssistantImage}
-            alt={showPopup ? "close" : "assistant"}
-          />
+        <button
+          onClick={togglePopup}
+          className={`relative w-16 h-16 transition-all bg-white border-0 rounded-full shadow-xl md:w-32 md:h-32 ${
+            showPopup ? "hover:bg-coral" : ""
+          }`}
+          aria-label={showPopup ? "Close chat" : "Open chat"}
+        >
+          <div className="flex items-center justify-center">
+            <img
+              className="rounded-full w-14 h-14 md:w-28 md:h-28"
+              src={showPopup ? CloseIcon : AssistantImage}
+              alt={showPopup ? "close" : "assistant"}
+            />
+          </div>
+        </button>
+        <div className="fixed z-49 right-48 bottom-8">
+          {showPopup && <ChatBot />}
         </div>
-        {showPopup && <ChatPopup />}
-      </button>
+      </div>
     </div>
   );
 };

@@ -72,7 +72,9 @@ export default function OurWorks() {
       className="container py-24 md:py-44 xl:px-[8rem] px-6 overflow-hidden"
       id="OurWorks"
     >
-      <h4 className="text-4xl text-center md:text-5xl">Our works</h4>
+      <h4 className="text-4xl text-center md:text-5xl text-darkslategray">
+        Our works
+      </h4>
       <div className="grid gap-6 pt-16 lg:grid-cols-2">
         {workData.map((work, index) => (
           <WorkItem key={index} work={work} />

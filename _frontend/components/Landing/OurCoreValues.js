@@ -13,7 +13,7 @@ const OurCoreValues = () => {
                 01. Innovation
                 <span className="w-[50px] absolute left-0 -bottom-[20px] h-[2px] bg-darkslategray/50"></span>
               </p>
-              <p className="pt-12 text-3xl">
+              <p className="pt-12 text-3xl  text-darkslategray">
                 Startupz operates where entrepreneurship and technology
                 intersect. We design solutions and turn them into businesses
                 models.
@@ -24,7 +24,7 @@ const OurCoreValues = () => {
                 02. People
                 <span className="w-[50px] absolute left-0 -bottom-[20px] h-[2px] bg-darkslategray/50"></span>
               </p>
-              <p className="pt-12">
+              <p className="pt-12  text-darkslategray">
                 Talent is what enable us to create great companies.
               </p>
             </div>

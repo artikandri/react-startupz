@@ -27,6 +27,7 @@
     "path": "^0.12.7",
     "postcss": "^8.4.30",
     "prop-types": "^15.8.1",
+    "react-chatbot-kit": "^2.1.2",
     "react-redux": "^8.1.2",
     "react-responsive": "^9.0.2",
     "redux": "^4.2.1",

@@ -32,7 +32,9 @@ const WhoWeAre = () => {
                   02{" "}
                   <span className="w-[50px] absolute left-0 -bottom-[20px] h-[2px] bg-darkslategray/50"></span>
                 </p>
-                <p>Next we build teams to scale them into companies</p>
+                <p className="text-darkslategray">
+                  Next we build teams to scale them into companies
+                </p>
               </div>
 
               <div className="flex flex-col gap-10">
@@ -40,7 +42,9 @@ const WhoWeAre = () => {
                   03
                   <span className="w-[50px] absolute left-0 -bottom-[20px] h-[2px] bg-darkslategray/50"></span>
                 </p>
-                <p>Each startup solving one problem at a time</p>
+                <p className="text-darkslategray">
+                  Each startup solving one problem at a time
+                </p>
               </div>
             </div>
           </div>

@@ -11,10 +11,12 @@ import Quote from "@/components/Landing/Quote";
 import { LinkPreview } from "@dhaiwat10/react-link-preview";
 
 const Landing = () => {
-  const url = process.env.REACT_APP_BASE_URL;
+  const url = import.meta.env.VITE_BASE_URL;
   return (
     <>
-      <LinkPreview url={url} width="400px" />
+      {import.meta.env === "PRODUCTION" && (
+        <LinkPreview url={url} width="400px" />
+      )}
       <Hero />
       <FadeInSection>
         <WhoWeAre />
