@@ -3,8 +3,10 @@ email: argikartika@gmail.com
 description: >
   Startupz is a startup studio that develops and launches new companies.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site
+url: "https://dashing-macaron-2898dd.netlify.app/" # the base hostname & protocol for your site
 github_username: artikandri
+plugins:
+  - jekyll/vite
 
 # Build settings
 markdown: kramdown
