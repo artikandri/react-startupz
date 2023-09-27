@@ -5,21 +5,35 @@ const styles = {
   state: (state = "primary") => {
     if (state === "primary") {
       return "border-0 text-white bg-complementary-green ";
+    } else if (state === "secondary") {
+      return "border-0 bg-white rounded-full ring-1 ring-complementary-green text-complementary-green";
+    }
+  },
+  size(size = "md") {
+    if (size === "sm") {
+      return "px-3 py-2 ";
+    } else if (size === "md") {
+      return "px-4 py-3 ";
     }
   },
   class: () => {
-    return "px-6 py-4 mt-14 md:mt-6 font-bold no-underline rounded-full  tracking-wider  transition-all hover:shadow-md";
+    return "font-bold no-underline rounded-full  tracking-wider  transition-all hover:shadow-md";
   },
 };
 
 const Button = (props) => {
-  const { state, className, onClick, children, type, ...rest } = props;
+  const { state, size, className, onClick, children, type, ...rest } = props;
   return (
     <button
       {...rest}
       type={props.type ? props.type : "button"}
       onClick={props.onClick}
-      className={cx(styles.state(props.state), styles.class(), className)}
+      className={cx(
+        styles.state(state),
+        styles.size(size),
+        styles.class(),
+        className
+      )}
     >
       {children}
     </button>

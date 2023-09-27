@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import logo from "@/assets/images/group-15.svg";
 import CloseIcon from "@/assets/images/closeMenu.png";
 import MenuIcon from "@/assets/images/hamburgerMenu.png";
+import Button from "@/components/Button";
 
 const Header = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -28,12 +29,14 @@ const Header = () => {
         >
           Contact
         </a>
-        <a
-          href="#Work"
-          className="px-10 py-3 font-bold no-underline bg-white rounded-full ring-1 ring-complementary-green text-complementary-green tracking-wider hover:-translate-y-0.5 transition-all hover:shadow-md"
+        <Button
+          type={"button"}
+          state={"secondary"}
+          name={"Work with us!"}
+          aria-expanded="false"
         >
           Work with us!
-        </a>
+        </Button>
       </nav>
 
       <button
@@ -63,13 +66,15 @@ const Header = () => {
             >
               Contact
             </a>
-            <a
-              href="#Work"
-              onClick={onClickMenuItem}
-              className="px-10 py-3 font-bold no-underline bg-white rounded-full ring-1 ring-complementary-green text-complementary-green tracking-wider hover:-translate-y-0.5 transition-all hover:shadow-md"
+
+            <Button
+              type={"button"}
+              state={"secondary"}
+              name={"Work with us!"}
+              aria-expanded="false"
             >
               Work with us!
-            </a>
+            </Button>
           </nav>
         </div>
       )}

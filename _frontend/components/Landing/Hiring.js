@@ -22,7 +22,8 @@ const Hiring = ({}) => {
             </p>
             <Button
               type={"button"}
-              variant={"primary"}
+              size={"sm"}
+              state={"primary"}
               name={"See current openings"}
               aria-expanded="false"
             >
