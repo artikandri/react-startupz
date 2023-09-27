@@ -10,8 +10,8 @@ const Hero = () => {
     <>
       <section className="relative h-[82dvh] overflow-hidden" id="hero">
         <div className="container">
-          <div className="flex flex-col items-start xl:px-[8rem] px-4 pt-16 md:pt-32">
-            <h1 className="title m-0 font-bold text-darkslategray text-4xl md:text-[85px] leading-[85px] font-custom tracking-tight">
+          <div className="flex flex-col items-start xl:px-[8rem] px-6 pt-16 md:pt-32">
+            <h1 className="title m-0 font-bold text-darkslategray text-4xl md:text-[85px] leading-[85px] font-custom max-w-md tracking-tight">
               We Create <br className="hidden md:block" /> Startups.
             </h1>
             <p className="subtitle w-2/3 m-0 text-xl md:w-1/2 md:mt-8 md:text-2xl xl:w-full text-coral">

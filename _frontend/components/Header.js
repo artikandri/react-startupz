@@ -11,7 +11,7 @@ const Header = () => {
   };
 
   return (
-    <header className="flex justify-between xl:px-[8rem] px-4 pt-4 md:pt-8">
+    <header className="flex justify-between xl:px-[8rem] px-6 pt-4 md:pt-8">
       <div>
         <img src={logo} alt="Company Logo" />
       </div>

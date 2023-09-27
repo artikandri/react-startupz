@@ -7,7 +7,7 @@ const WhoWeAre = () => {
       <section className="overflow-hidden bg-snow">
         <div className="container relative ">
           <div className="py-32">
-            <div className="xl:px-[8rem] px-4 ">
+            <div className="xl:px-[8rem] px-6 ">
               <h2 className="text-4xl md:text-5xl ">Who we are</h2>
               <p className="pt-8 text-lg md:text-xl lg:text-2xl text-coral">
                 We create products that have innovation and technology at their
@@ -16,7 +16,7 @@ const WhoWeAre = () => {
               </p>
             </div>
 
-            <div className="grid md:grid-cols-3 xl:px-[8rem] px-4 pt-20 font-bold text-2xl lg:text-3xl gap-12">
+            <div className="grid md:grid-cols-3 xl:px-[8rem] px-6 pt-20 font-bold text-2xl lg:text-3xl gap-12">
               <div className="flex flex-col gap-10">
                 <p className=" text-coral relative">
                   01

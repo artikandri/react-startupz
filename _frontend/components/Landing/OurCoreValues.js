@@ -5,7 +5,7 @@ const OurCoreValues = () => {
   return (
     <>
       <section className="overflow-hidden bg-snow">
-        <div className="container relative py-32 xl:px-[8rem] px-4 ">
+        <div className="container relative py-32 xl:px-[8rem] px-6 ">
           <h2 className="text-4xl md:text-5xl">Our core values</h2>
           <div className="grid gap-12 pt-32 text-3xl font-bold md:grid-cols-2">
             <div className="">

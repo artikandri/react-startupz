@@ -7,7 +7,7 @@ const Footer = ({ clickHandlerAlert }) => {
   return (
     <>
       <footer
-        className="container xl:px-[8rem] px-4 py-24 grid md:grid-cols-2 lg:flex lg:justify-between gap-5 overflow-hidden"
+        className="container xl:px-[8rem] px-6 py-24 grid md:grid-cols-2 lg:flex lg:justify-between gap-5 overflow-hidden"
         id="Contact"
       >
         <div className="flex flex-col items-start justify-between row-span-3 h-44 gl:h-44">

@@ -4,7 +4,7 @@ import rightHand from "@/assets/images/untitled-artwork-12-1@2x.png";
 const Quote = () => {
   return (
     <>
-      <section className="container flex items-center justify-center px-4 pb-24 overflow-hidden md:pb-44">
+      <section className="container flex items-center justify-center px-6 pb-24 overflow-hidden md:pb-44">
         <div className="flex items-center justify-center gap-5 md:gap-10">
           <img className="w-14 " src={leftHand} alt="left hand ok" />
           <h3 className="text-base md:text-2xl lg:text-4xl  lg:w-[800px] text-coral text-center">

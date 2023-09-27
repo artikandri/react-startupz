@@ -7,7 +7,7 @@ const Contacts = ({ clickHandlerThanks }) => {
         className="overflow-hidden text-white bg-secondary-yellow"
         id="Work"
       >
-        <div className="xl:px-[8rem] flex flex-col justify-center items-center lg:items-start px-4 container pb-16 z-20 relative">
+        <div className="xl:px-[8rem] flex flex-col justify-center items-center lg:items-start px-6 container pb-16 z-20 relative">
           <h4 className="text-4xl font-bold md:text-6xl lg:w-2/3 pt-14">
             Are you ready <br className="hidden lg:block" /> to board this
             rocket ship?

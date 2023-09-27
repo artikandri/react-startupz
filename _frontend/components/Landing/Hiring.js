@@ -1,6 +1,7 @@
 import React from "react";
 import leftman from "@/assets/images/leftman.png";
 import rightman from "@/assets/images/rightman.png";
+import Button from "@/components/Button";
 
 const Hiring = ({}) => {
   return (
@@ -19,9 +20,14 @@ const Hiring = ({}) => {
               our startups.
               <span className="block">Check out our current openings</span>
             </p>
-            <button className="border-0 px-6 py-4 mt-3 md:mt-6 font-bold text-white no-underline rounded-full bg-complementary-green hover:-translate-y-0.5 transition-all hover:shadow-md">
+            <Button
+              type={"button"}
+              variant={"primary"}
+              name={"See current openings"}
+              aria-expanded="false"
+            >
               See current openings
-            </button>
+            </Button>
           </div>
         </div>
 

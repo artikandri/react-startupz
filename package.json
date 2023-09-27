@@ -22,6 +22,7 @@
     "babel-polyfill": "^6.26.0",
     "babel-preset-react": "^6.24.1",
     "babel-register": "^6.26.0",
+    "clsx": "^2.0.0",
     "compass-mixins": "^0.12.12",
     "jquery": "^3.7.1",
     "path": "^0.12.7",
