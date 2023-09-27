@@ -42,6 +42,7 @@
     "@babel/plugin-proposal-import-attributes-to-assertions": "^7.22.5",
     "@babel/preset-env": "^7.22.20",
     "@babel/preset-react": "^7.22.15",
+    "@dhaiwat10/react-link-preview": "^1.15.0",
     "@reduxjs/toolkit": "^1.9.6",
     "@vitejs/plugin-react": "^4.1.0",
     "babel-plugin-transform-class-properties": "^6.24.1",
