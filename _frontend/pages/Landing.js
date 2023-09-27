@@ -8,32 +8,29 @@ import OurWorks from "@/components/Landing/OurWorks";
 import WeLoveSolvingProblems from "@/components/Landing/WeLoveSolvingProblems";
 import OurCoreValues from "@/components/Landing/OurCoreValues";
 import Quote from "@/components/Landing/Quote";
+import { LinkPreview } from "@dhaiwat10/react-link-preview";
 
 const Landing = () => {
+  const url = process.env.REACT_APP_BASE_URL;
   return (
     <>
+      <LinkPreview url={url} width="400px" />
       <Hero />
       <FadeInSection>
         <WhoWeAre />
       </FadeInSection>
-      <FadeInSection>
-        <WeLoveSolvingProblems />
-      </FadeInSection>
+      <WeLoveSolvingProblems />
       <FadeInSection>
         <OurCoreValues />
       </FadeInSection>
-      <FadeInSection>
-        <OurWorks />
-      </FadeInSection>
+      <OurWorks />
       <FadeInSection>
         <Quote />
       </FadeInSection>
       <FadeInSection>
         <Hiring />
       </FadeInSection>
-      <FadeInSection>
-        <ContactUs />
-      </FadeInSection>
+      <ContactUs />
     </>
   );
 };

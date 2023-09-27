@@ -43,7 +43,7 @@ export function animationOnHeroMounted(options = {}) {
       targets: ".cta",
       opacity: [0, 1],
       easing: "easeInOutQuad",
-      duration: 1400,
+      duration: 900,
     });
 
   window.onload = function () {

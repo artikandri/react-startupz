@@ -9,7 +9,7 @@ const Hero = () => {
   });
   return (
     <>
-      <section className="relative h-[82dvh] overflow-hidden" id="hero">
+      <section className="relative h-screen overflow-hidden" id="hero">
         <div className="container">
           <div className="flex flex-col items-start xl:px-[8rem] px-6 pt-16 md:pt-32">
             <h1 className="title m-0 font-bold text-darkslategray text-4xl md:text-[85px] leading-[85px] font-custom max-w-md tracking-tight">
