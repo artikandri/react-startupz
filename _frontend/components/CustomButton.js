@@ -3,8 +3,16 @@ import cx from "clsx";
 import Button from "react-bootstrap/Button";
 
 const styles = {
-  class: () => {
-    return "";
+  class: (state = "") => {
+    let className = "fw-bold ";
+    if (state === "primary") {
+      className += "text-white";
+    } else if (state === "dark") {
+      className += "text-white";
+    } else if (state === "light") {
+      className += "text-primary border-primary border-1";
+    }
+    return className;
   },
 };
 

@@ -13,8 +13,8 @@
   <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico" />
   {% if page.url == "/404.html" %}
   <meta http-equiv="refresh" content="5; url=/" />
-  {% endif %} <link rel="stylesheet" href="{{ "/css/main.css" | prepend:
-  site.baseurl }}">
+  {% endif %}
+  <link rel="stylesheet" href="/css/main.css" />
   <link
     rel="canonical"
     href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}"

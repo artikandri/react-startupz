@@ -32,7 +32,7 @@ const ChatButton = () => {
   };
 
   return (
-    <div>
+    <div className="sticky-bottom text-end me-5 mb-5">
       <div
         className={` ${showPopup ? "--active" : "--inactive"}`}
         title="Chat button"

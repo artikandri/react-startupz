@@ -3,6 +3,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import questionMark from "@/assets/images/questionMark.png";
+import "./index.scss";
 
 const items = [
   {
@@ -18,33 +19,39 @@ const items = [
 
 const WhoWeAre = () => {
   return (
-    <>
+    <div className="bg-light-gray landing-wwa py-140">
       <Container>
         <Row>
           <Col>
-            <div>
-              <h2 className="">Who we are</h2>
+            <div className="landing-wwa__title">
+              <h2 className="text-dark fw-bold fs-2">Who we are</h2>
               <img src={questionMark} className="question-mark" />
             </div>
-            <p className="">
+            <p className="text-primary-orange fs-5">
               We create products that have innovation and technology at their
               core. <br /> We value working with talented people that understand
               the possibilities of today.
             </p>
           </Col>
         </Row>
-        <Row>
+        <Row className="landing-wwa__list">
           {items.map((item, index) => {
             return (
-              <Col key={index} md="4">
-                <span>{"0" + (index + 1)}</span>
-                <p> {item.text}</p>
+              <Col
+                key={index}
+                md="4"
+                className="fs-3-5 landing-wwa__list__item"
+              >
+                <span className="text-primary-orange fw-bold index">
+                  {"0" + (index + 1)}
+                </span>
+                <p className="text-dark"> {item.text}</p>
               </Col>
             );
           })}
         </Row>
       </Container>
-    </>
+    </div>
   );
 };
 

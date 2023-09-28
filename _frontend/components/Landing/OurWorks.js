@@ -15,28 +15,28 @@ const workData = [
     description:
       "Tolq is the translation solution built for e-commerce. It provides all pieces of the localization puzzle in one single integrated solution.",
     image: pc1,
-    color: "#a9bc87",
+    titleClassName: "text-light-green",
   },
   {
     title: "Feedback Labs",
     description:
       "Feedback Labs turns feedback into actionable insights for your team.",
     image: pc2,
-    color: "#8bb5c9",
+    titleClassName: "text-light-blue",
   },
   {
     title: "Codekeeper",
     description:
       "Codekeeper is an all-in-one solution for software developers and publishers to provide source code escrow as part of service level and license agreements.",
     image: pc3,
-    color: "#00a0b6",
+    titleClassName: "text-deep-green",
   },
   {
     title: "LegalSite",
     description:
       "Protected against legal risks, privacy compliant and always up-to-date with the latest regulatory developments.",
     image: pc4,
-    color: "#8b60d3",
+    titleClassName: "text-purple",
   },
 ];
 
@@ -45,7 +45,7 @@ export default function OurWorks() {
     <Container id="OurWorks">
       <Row>
         <Col>
-          <h2>Our works</h2>
+          <h2 className="text-center fw-bold text-dark ">Our works</h2>
         </Col>
       </Row>
       <Row>
@@ -53,16 +53,23 @@ export default function OurWorks() {
           return (
             <Col key={index} md="6" xs="12">
               <Card>
-                <Card.Body>
-                  <Card.Title>{work.title}</Card.Title>
-                  <Card.Text>{work.description}</Card.Text>
+                <Card.Body className="">
+                  <Card.Title
+                    className={`${work.titleClassName} text-center fs-3`}
+                  >
+                    {work.title}
+                  </Card.Title>
+                  <Card.Text className="text-dark text-center fs-small">
+                    {work.description}
+                  </Card.Text>
                 </Card.Body>
+
                 <Card.Img variant="top" src={work.image} />
                 <CustomButton
                   type={"button"}
                   state={"light"}
                   name={"More"}
-                  className={"mt-4 "}
+                  className={""}
                   aria-expanded="false"
                 >
                   More

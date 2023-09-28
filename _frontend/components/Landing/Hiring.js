@@ -8,25 +8,23 @@ import Col from "react-bootstrap/Col";
 
 const Hiring = ({}) => {
   return (
-    <>
+    <div className="bg-light-gray py-140">
       <Container>
         <Row>
-          <Col>
-            <h2>We are hiring!</h2>
-          </Col>
-        </Row>
-        <Row>
-          <Col>
-            <p>
+          <Col className="text-center mx-auto" md="6">
+            <h2 className="text-dark fs-2-5">We are hiring!</h2>
+            <p className="text-primary-orange fs-5">
               We're always looking for talented people to join and help build
               our startups. <br />
               Check out our current openings
             </p>
-            <CustomButton size={"lg"}>See current openings</CustomButton>
+            <CustomButton size={"md"} state={"primary"}>
+              See current openings
+            </CustomButton>
           </Col>
         </Row>
       </Container>
-    </>
+    </div>
   );
 };
 

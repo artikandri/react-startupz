@@ -1,0 +1,10 @@
+.landing-hero {
+  background-image: url("@/assets/images/hero.png");
+  background-position-x: right;
+  background-position-y: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: calc(100vh - 80px);
+  display: flex;
+  align-items: center;
+}

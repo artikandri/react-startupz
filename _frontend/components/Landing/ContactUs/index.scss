@@ -1,0 +1,9 @@
+@import "@/styles/_variables";
+
+.contact-us {
+  &__form {
+    label {
+      color: map-get($map: $theme-colors, $key: medium-gray);
+    }
+  }
+}

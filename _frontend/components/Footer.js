@@ -8,7 +8,7 @@ import Col from "react-bootstrap/Col";
 
 const companies = [
   {
-    text: "tolq",
+    text: "Tolq",
     url: "http://tolq.com",
   },
   {
@@ -45,54 +45,64 @@ const socialMedias = [
 
 const Footer = () => {
   return (
-    <Container>
-      <Row>
-        <Col sm="6" md="3">
-          <img className="" src={logo} alt="logo" />
-          <p className="">
-            © 2020 Startupz. <br /> All rights reserved.
-          </p>
-        </Col>
-        <Col sm="6" md="3">
-          <h4>Companies</h4>
-          <ul>
-            {companies.map((company, index) => {
-              return (
-                <li key={index}>
-                  <a href={company.url}>{company.text}</a>
-                </li>
-              );
-            })}
-          </ul>
-        </Col>
-        <Col sm="6" md="3">
-          <h4>Companies</h4>
-          <address>
-            World Trade Center - The Hague <br /> Prinses Margrietplantsoen 33{" "}
-            <br /> 2595 AM The Hague <br /> The Netherlands
-          </address>
+    <div className="bg-light-gray">
+      <Container>
+        <Row>
+          <Col sm="6" md="3">
+            <img className="" src={logo} alt="logo" />
+            <p className="text-medium-gray">
+              © 2020 Startupz. <br /> All rights reserved.
+            </p>
+          </Col>
+          <Col sm="6" md="3">
+            <h4>Companies</h4>
+            <ul>
+              {companies.map((company, index) => {
+                return (
+                  <li key={index}>
+                    <a
+                      href={company.url}
+                      className="link-primary text-decoration-none"
+                    >
+                      {company.text}
+                    </a>
+                  </li>
+                );
+              })}
+            </ul>
+          </Col>
+          <Col sm="6" md="3">
+            <h4>Companies</h4>
+            <address className="text-medium-gray">
+              World Trade Center - The Hague <br /> Prinses Margrietplantsoen 33{" "}
+              <br /> 2595 AM The Hague <br /> The Netherlands
+            </address>
 
-          <a className="" href="mailto:startupz@startupz.com">
-            Send us an email
-          </a>
-        </Col>
-        <Col sm="6" md="3">
-          <h4>Contact</h4>
-          <ul>
-            {socialMedias.map((socialMedia, index) => {
-              return (
-                <li key={index}>
-                  <a href="{socialMedia.url}">
-                    <img src={socialMedia.icon} />
-                    <span>{socialMedia.text}</span>
-                  </a>
-                </li>
-              );
-            })}
-          </ul>
-        </Col>
-      </Row>
-    </Container>
+            <a
+              className=""
+              href="mailto:startupz@startupz.com"
+              className="text-primary text-decoration-none"
+            >
+              Send us an email
+            </a>
+          </Col>
+          <Col sm="6" md="3">
+            <h4>Contact</h4>
+            <ul>
+              {socialMedias.map((socialMedia, index) => {
+                return (
+                  <li key={index}>
+                    <a href={socialMedia.url} className="link-primary">
+                      <img src={socialMedia.icon} />
+                    </a>
+                  </li>
+                );
+              })}
+            </ul>
+          </Col>
+        </Row>
+      </Container>
+    </div>
   );
 };
 

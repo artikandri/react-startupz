@@ -1,12 +1,10 @@
 import React, { useState } from "react";
 import logo from "@/assets/images/group-15.svg";
-import CloseIcon from "@/assets/images/closeMenu.png";
-import MenuIcon from "@/assets/images/hamburgerMenu.png";
 import CustomButton from "@/components/CustomButton";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
+import { useMediaQuery } from "react-responsive";
 
 const menuItems = [
   {
@@ -24,26 +22,34 @@ const menuItems = [
     url: "#Hiring",
     type: "button",
     metadata: {
-      state: "white",
+      state: "light",
     },
   },
 ];
 
 const Header = () => {
+  const isLarge = useMediaQuery({
+    query: "(min-width: 769px)",
+  });
+
   return (
     <header>
-      <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary">
+      <Navbar collapseOnSelect expand="lg" className="bg-transparent">
         <Container>
           <Navbar.Brand href="/">
             <img src={logo} alt="logo" />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
-            <Nav>
+            <Nav
+              className={`${
+                isLarge ? `ms-auto ` : "mx-auto text-center"
+              } d-flex align-items-center`}
+            >
               {menuItems.map((item, index) => {
                 if (item.type === "link") {
                   return (
-                    <Nav.Link key={index} href={item.url}>
+                    <Nav.Link key={index} href={item.url} className="text-dark">
                       {item.text}
                     </Nav.Link>
                   );

@@ -1,0 +1,46 @@
+@import "@/styles/_variables";
+
+.landing-wlsp {
+  overflow: hidden;
+  word-break: break-word;
+
+  &__title {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url("@/assets/images/lefthand.png");
+      background-repeat: no-repeat;
+      height: 130px;
+      zoom: 50%;
+      width: 130px;
+      left: -200px;
+      bottom: 10px;
+
+      @media screen and (max-width: map-get($map: $container-max-widths, $key: md)) {
+        left: calc(50% - 130px);
+        bottom: unset;
+        top: -175px;
+      }
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      background-image: url("@/assets/images/righthand.png");
+      background-repeat: no-repeat;
+      height: 130px;
+      zoom: 50%;
+      width: 130px;
+      right: -200px;
+      bottom: 10px;
+
+      @media screen and (max-width: map-get($map: $container-max-widths, $key: md)) {
+        right: calc(50% - 130px);
+        bottom: unset;
+        top: 150px;
+      }
+    }
+  }
+}

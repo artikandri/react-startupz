@@ -3,3 +3,37 @@
     @content;
   }
 }
+
+@mixin padding($key, $value) {
+  @if $key == "left" {
+    .ps-#{$value} {
+      padding-left: #{$value}px;
+    }
+  } @else if $key == "right" {
+    .pe-#{$value} {
+      padding-right: #{$value}px;
+    }
+  } @else if $key == "top" {
+    .pt-#{$value} {
+      padding-top: #{$value}px;
+    }
+  } @else if $key == "bottom" {
+    .pb-#{$value} {
+      padding-bottom: #{$value}px;
+    }
+  } @else if $key == "x" {
+    .px-#{$value} {
+      padding-left: #{$value}px;
+      padding-right: #{$value}px;
+    }
+  } @else if $key == "y" {
+    .py-#{$value} {
+      padding-top: #{$value}px;
+      padding-bottom: #{$value}px;
+    }
+  } @else {
+    .p-#{$value} {
+      padding: #{$value}px;
+    }
+  }
+}

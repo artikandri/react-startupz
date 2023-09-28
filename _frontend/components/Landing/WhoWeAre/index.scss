@@ -1,0 +1,24 @@
+@import "@/styles/variables";
+
+.landing-wwa {
+  &__title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    > img {
+      max-width: 75px;
+    }
+  }
+
+  &__list {
+    &__item {
+      .index {
+        border-bottom: 1px solid map-get($map: $theme-colors, $key: dark);
+        padding-bottom: 1px;
+        line-height: 1.5;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}
