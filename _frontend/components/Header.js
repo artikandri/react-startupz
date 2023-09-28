@@ -18,13 +18,13 @@ const Header = () => {
       </div>
       <nav className="items-center hidden gap-12 mb-3 font-normal md:flex text-darkslategray">
         <a
-          className="no-underline transition-all text-darkslategray hover:text-coral hover:font-medium"
+          className="no-underline transition-all text-darkslategray  visited:text-darkslategray hover:text-coral hover:font-medium"
           href="#OurWorks"
         >
           Startups
         </a>
         <a
-          className="no-underline transition-all text-darkslategray hover:text-coral hover:font-medium"
+          className="no-underline transition-all text-darkslategray  visited:text-darkslategray hover:text-coral hover:font-medium"
           href="#Contact"
         >
           Contact
@@ -51,7 +51,7 @@ const Header = () => {
 
       {showMenu && (
         <div className="fixed z-40 inset-1 top-20">
-          <nav className="flex flex-col items-center gap-12 py-16 mb-3 font-normal text-complementary-green shadow-xl bg-white rounded-3xl backdrop-blur-md ">
+          <nav className="flex flex-col items-center gap-12 py-16 mb-3 font-normal visited:text-complementary-green text-complementary-green shadow-xl bg-white rounded-3xl backdrop-blur-md ">
             <a
               className="no-underline transition-all hover:text-coral hover:font-medium"
               href="#OurWorks"
@@ -60,7 +60,7 @@ const Header = () => {
               Startups
             </a>
             <a
-              className="no-underline transition-all hover:text-coral hover:font-medium"
+              className="no-underline transition-all text-complementary-green visited:text-complementary-green hover:text-coral hover:font-medium"
               href="#Contact"
               onClick={onClickMenuItem}
             >

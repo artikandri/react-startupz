@@ -1,7 +1,7 @@
 import $ from "jquery";
 import anime from "animejs";
 
-export function fadeInOnReadyElement(selector, classToRemove) {
+export function fadeInOnReadyElement(selector) {
   $(document).ready(function () {
     $(selector).each(function (i) {
       $(this).animate({ opacity: "1" }, 1000);

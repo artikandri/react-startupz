@@ -20,25 +20,25 @@ const Footer = ({ clickHandlerAlert }) => {
           <h5 className="text-lg font-medium">Companies</h5>
           <div className="flex flex-col gap-4 pt-6 font-medium no-underline text-complementary-green">
             <a
-              className="transition-all hover:text-coral hover:font-medium text-complementary-green"
+              className="transition-all hover:text-coral hover:font-medium visited:text-complementary-green text-complementary-green"
               href="https://tolq.com/"
             >
               Tolq
             </a>
             <a
-              className="transition-all hover:text-coral hover:font-medium text-complementary-green"
+              className="transition-all hover:text-coral hover:font-medium visited:text-complementary-green text-complementary-green"
               href="https://legalsite.co/"
             >
               LegalSite
             </a>
             <a
-              className="transition-all hover:text-coral hover:font-medium text-complementary-green"
+              className="transition-all hover:text-coral hover:font-medium visited:text-complementary-green text-complementary-green"
               href="https://codekeeper.co/index.html"
             >
               Codekeeper
             </a>
             <a
-              className="transition-all hover:text-coral hover:font-medium text-complementary-green"
+              className="transition-all hover:text-coral hover:font-medium visited:text-complementary-green text-complementary-green"
               href="https://feedbacklabs.org/"
             >
               Feedback Labs

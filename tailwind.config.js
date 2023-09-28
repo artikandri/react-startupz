@@ -34,6 +34,7 @@ export default {
         coral: "#fb8958",
         mediumpurple: "#8b60d3",
         darkcyan: "#00a0b6",
+        lightcyan: "#46B8C8",
         lightsteelblue: "#8bb5c9",
         darkseagreen: "#a9bc87",
         snow: "#fbfafa",
