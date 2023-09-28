@@ -2,7 +2,6 @@ import { defineConfig, transformWithEsbuild } from "vite";
 import RubyPlugin from "vite-plugin-ruby";
 import react from "@vitejs/plugin-react";
 import vitePlugin from "vite-plugin-react-js-support";
-import tailwindcss from "tailwindcss";
 
 const fs = require("fs");
 
@@ -31,7 +30,7 @@ export default defineConfig({
   },
   css: {
     postcss: {
-      plugins: [tailwindcss],
+      plugins: [],
     },
   },
   plugins: [

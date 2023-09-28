@@ -1,43 +1,31 @@
 import React from "react";
 import leftman from "@/assets/images/leftman.png";
 import rightman from "@/assets/images/rightman.png";
-import Button from "@/components/Button";
+import CustomButton from "@/components/CustomButton";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 
 const Hiring = ({}) => {
   return (
     <>
-      <section className="flex items-center justify-between py-16 overflow-hidden bg-snow">
-        <img
-          className="hidden h-10 md:block md:h-44 lg:h-64 xl:h-80"
-          src={leftman}
-          alt="Man on the left side of the section"
-        />
-        <div className="container flex justify-center">
-          <div className="flex flex-col justify-center items-center w-1/2 gap-8 md:py-24 lg:py-36">
-            <h4 className="text-4xl lg:text-5xl">We are hiring!</h4>
-            <p className="text-xl font-semibold text-center lg:text-2xl text-coral">
+      <Container>
+        <Row>
+          <Col>
+            <h2>We are hiring!</h2>
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <p>
               We're always looking for talented people to join and help build
-              our startups.
-              <span className="block">Check out our current openings</span>
+              our startups. <br />
+              Check out our current openings
             </p>
-            <Button
-              type={"button"}
-              size={"lg"}
-              state={"primary"}
-              name={"See current openings"}
-              aria-expanded="false"
-            >
-              See current openings
-            </Button>
-          </div>
-        </div>
-
-        <img
-          className="hidden md:block md:h-44 lg:h-64 xl:h-80"
-          src={rightman}
-          alt="Man on the right side of the section"
-        />
-      </section>
+            <CustomButton size={"lg"}>See current openings</CustomButton>
+          </Col>
+        </Row>
+      </Container>
     </>
   );
 };

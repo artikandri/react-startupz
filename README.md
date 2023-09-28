@@ -1,6 +1,6 @@
 ## Startupz landing page (React + Jekyll)
 
-This test website is created with React + Jekyll + Vite + TailwindCSS. The design was adapted from https://www.figma.com/file/GIrurcGtyHKB5hCkZB4cqM/Startupz---Landing-page?node-id=0%3A1&mode=dev
+This test website is created with React + Jekyll + Vite + Bootstrap. The design was adapted from https://www.figma.com/file/GIrurcGtyHKB5hCkZB4cqM/Startupz---Landing-page?node-id=0%3A1&mode=dev
 Before running the project, make sure you have `jekyll`, `webpack`, and `npm` installed on your environment.
 
 ### Installation

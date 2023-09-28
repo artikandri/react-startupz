@@ -2,8 +2,9 @@ import React from "react";
 import ReactDOM from "react-dom";
 import App from "@/components/App";
 import { BrowserRouter as Router } from "react-router-dom";
-import "@/styles/index.scss";
+import "bootstrap/dist/css/bootstrap.min.css";
 import "react-chatbot-kit/build/main.css";
+import "@/styles/index.scss";
 
 ReactDOM.render(
   <React.StrictMode>
