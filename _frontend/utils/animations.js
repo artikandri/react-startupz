@@ -1,7 +1,7 @@
 import $ from "jquery";
 import anime from "animejs";
 
-export function fadeInOnReadyElement(selector, classToRemove) {
+export function fadeInOnReadyElement(selector) {
   $(document).ready(function () {
     $(selector).each(function (i) {
       $(this).animate({ opacity: "1" }, 1000);
@@ -18,13 +18,13 @@ export function splitTextOnReadyElement(selector) {
 }
 
 export function animationOnHeroMounted(options = {}) {
-  splitTextOnReadyElement(".title");
-  splitTextOnReadyElement(".subtitle");
+  splitTextOnReadyElement(".landing-hero .title");
+  splitTextOnReadyElement(".landing-hero .subtitle");
 
   const timeline = anime.timeline();
   timeline
     .add({
-      targets: ".title .letter",
+      targets: ".landing-hero .title .letter",
       scale: [4, 1],
       opacity: [0, 1],
       translateZ: 0,
@@ -33,7 +33,7 @@ export function animationOnHeroMounted(options = {}) {
       delay: (el, i) => 70 * i,
     })
     .add({
-      targets: ".subtitle .letter",
+      targets: ".landing-hero .subtitle .letter",
       opacity: [0, 1],
       easing: "easeInOutQuad",
       duration: 950,

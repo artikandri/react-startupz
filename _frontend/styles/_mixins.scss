@@ -3,3 +3,71 @@
     @content;
   }
 }
+
+@mixin padding($key, $value) {
+  @if $key == "left" {
+    .ps-#{$value} {
+      padding-left: #{$value}px;
+    }
+  } @else if $key == "right" {
+    .pe-#{$value} {
+      padding-right: #{$value}px;
+    }
+  } @else if $key == "top" {
+    .pt-#{$value} {
+      padding-top: #{$value}px;
+    }
+  } @else if $key == "bottom" {
+    .pb-#{$value} {
+      padding-bottom: #{$value}px;
+    }
+  } @else if $key == "x" {
+    .px-#{$value} {
+      padding-left: #{$value}px;
+      padding-right: #{$value}px;
+    }
+  } @else if $key == "y" {
+    .py-#{$value} {
+      padding-top: #{$value}px;
+      padding-bottom: #{$value}px;
+    }
+  } @else {
+    .p-#{$value} {
+      padding: #{$value}px;
+    }
+  }
+}
+
+@mixin margin($key, $value) {
+  @if $key == "left" {
+    .ms-#{$value} {
+      margin-left: #{$value}px;
+    }
+  } @else if $key == "right" {
+    .me-#{$value} {
+      margin-right: #{$value}px;
+    }
+  } @else if $key == "top" {
+    .mt-#{$value} {
+      margin-top: #{$value}px;
+    }
+  } @else if $key == "bottom" {
+    .mb-#{$value} {
+      margin-bottom: #{$value}px;
+    }
+  } @else if $key == "x" {
+    .mx-#{$value} {
+      margin-left: #{$value}px;
+      margin-right: #{$value}px;
+    }
+  } @else if $key == "y" {
+    .my-#{$value} {
+      margin-top: #{$value}px;
+      margin-bottom: #{$value}px;
+    }
+  } @else {
+    .m-#{$value} {
+      margin: #{$value}px;
+    }
+  }
+}

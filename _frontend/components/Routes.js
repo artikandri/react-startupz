@@ -1,7 +1,7 @@
-import React, { Suspense, useState } from "react";
-import { Routes, Route, Link } from "react-router-dom";
+import React from "react";
+import { Routes, Route } from "react-router-dom";
 import Landing from "@/pages/Landing";
-import NotFound from "@/pages/NotFound";
+import NotFound from "@/pages/NotFound/";
 
 export const RouteHook = () => {
   return (

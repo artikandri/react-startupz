@@ -1,0 +1,33 @@
+@import "@/styles/variables";
+
+.landing-wwa {
+  &__title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    > img {
+      max-width: 75px;
+    }
+  }
+
+  &__list {
+    &__item {
+      .index {
+        position: relative;
+        margin-bottom: 1rem;
+
+        &::after {
+          content: "";
+          width: 45px;
+          height: 1px;
+          background-color: map-get($map: $theme-colors, $key: dark);
+          display: inline-block;
+          position: absolute;
+          bottom: -5px;
+          left: 0;
+        }
+      }
+    }
+  }
+}

@@ -1,20 +1,87 @@
-$base-font-family: "CircularStd", "Roboto", Arial, sans-serif;
-$base-font-size: 16px;
-$base-font-weight: 400;
-$small-font-size: $base-font-size * 0.875;
-$base-line-height: 1.5;
+@font-face {
+  font-family: "CircularStd";
+  src: url("@/assets/font/CircularStd-Medium.woff2");
+  font-weight: 400;
+}
 
-$spacing-unit: 30px;
+@font-face {
+  font-family: "CircularStd";
+  src: url("@/assets/font/CircularStd-Bold.woff2");
+  font-weight: 700;
+}
 
-$text-color: #111;
-$background-color: #fdfdfd;
-$brand-color: #2a7ae2;
+@font-face {
+  font-family: "Roboto";
+  src: url("https://fonts.googleapis.com/css2?family=Roboto");
+  font-weight: 400;
+}
 
-$grey-color: #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark: darken($grey-color, 25%);
+$theme-colors: (
+  "primary": #71c8d5,
+  "dark": #3d4f5c,
+  "secondary-yellow": #ffc351,
+  "primary-orange": #fb8958,
+  "light-gray": #fbfbfa,
+  "light-gray-2": #f3f3f3,
+  "medium-gray": #939393,
+  "light-green": #a9bc87,
+  "light-blue": #8bb5c9,
+  "deep-green": #00a0b6,
+  "purple": #8b60d3,
+);
 
-$content-width: 800px;
+$headings-font-family: "CircularStd", "Roboto", Arial, sans-serif;
+$font-family-base: "CircularStd", "Roboto", Arial, sans-serif;
 
-$on-palm: 600px;
-$on-laptop: 800px;
+$font-size-base: 1rem;
+$line-height-base: 1.25;
+$input-box-shadow: 0px 8px 35px rgba(187, 168.92, 141.81, 0.15);
+$btn-border-radius: 32.5px;
+
+$container-max-widths: (
+  xs: 400px,
+  sm: 540px,
+  md: 720px,
+  lg: 900px,
+  xl: 1100px,
+  xxl: 1200px,
+);
+
+$btn-padding-x: 1.5rem;
+$btn-padding-y: 0.75rem;
+
+@media screen and (max-width: map-get($map: $container-max-widths, $key: xs)) {
+  $font-size-base: 0.75rem;
+}
+
+@media screen and (max-width: map-get($map: $container-max-widths, $key: sm)) {
+  $font-size-base: 0.875rem;
+}
+
+$h1-font-size: $font-size-base * 4.75;
+$h1-5-font-size: $font-size-base * 3.33;
+$h2-font-size: $font-size-base * 2.75;
+$h2-5-font-size: $font-size-base * 2.25;
+$h3-font-size: $font-size-base * 1.75;
+$h3-5-font-size: $font-size-base * 1.67;
+$h4-font-size: $font-size-base * 1.5;
+$h5-font-size: $font-size-base * 1.33;
+$h6-font-size: $font-size-base * 1.25;
+$h7-font-size: $font-size-base * 1.125;
+$small-font-size: $font-size-base * 0.875;
+
+$font-sizes: (
+  1: $h1-font-size,
+  "1-5": $h1-5-font-size,
+  2: $h2-font-size,
+  "2-5": $h2-5-font-size,
+  3: $h3-font-size,
+  "3-5": $h3-5-font-size,
+  4: $h4-font-size,
+  5: $h5-font-size,
+  6: $h6-font-size,
+  7: $h7-font-size,
+  small: $small-font-size,
+);
+
+@import "bootstrap/scss/bootstrap";

@@ -1,85 +1,91 @@
-import React, { useState } from "react";
+import React from "react";
 import logo from "@/assets/images/group-15.svg";
-import CloseIcon from "@/assets/images/closeMenu.png";
-import MenuIcon from "@/assets/images/hamburgerMenu.png";
-import Button from "@/components/Button";
+import CustomButton from "@/components/CustomButton";
+import Container from "react-bootstrap/Container";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
+import { useNavigate } from "react-router-dom";
+import { useMediaQuery } from "react-responsive";
+import $ from "jquery";
 
 const Header = () => {
-  const [showMenu, setShowMenu] = useState(false);
+  const navigate = useNavigate();
 
-  const onClickMenuItem = () => {
-    return setShowMenu(!showMenu);
+  const isLarge = useMediaQuery({
+    query: "(min-width: 769px)",
+  });
+
+  const onWorkWithUsButtonClick = () => {
+    if ($("#Hiring")[0]) {
+      $("#Hiring").get(0).scrollIntoView({ behavior: "smooth" });
+    } else {
+      navigate("/");
+    }
   };
 
+  const menuItems = [
+    {
+      text: "Startups",
+      url: "#OurWorks",
+      type: "link",
+    },
+    {
+      text: "Contact",
+      url: "#Contact",
+      type: "link",
+    },
+    {
+      text: "Work with us!",
+      onClick: onWorkWithUsButtonClick,
+      type: "button",
+      metadata: {
+        state: "light",
+      },
+    },
+  ];
+
   return (
-    <header className="flex justify-between xl:px-[8rem] px-6 pt-4 md:pt-8">
-      <div>
-        <img src={logo} alt="Company Logo" />
-      </div>
-      <nav className="items-center hidden gap-12 mb-3 font-normal md:flex text-darkslategray">
-        <a
-          className="no-underline transition-all text-darkslategray hover:text-coral hover:font-medium"
-          href="#OurWorks"
-        >
-          Startups
-        </a>
-        <a
-          className="no-underline transition-all text-darkslategray hover:text-coral hover:font-medium"
-          href="#Contact"
-        >
-          Contact
-        </a>
-        <Button
-          type={"button"}
-          state={"secondary"}
-          name={"Work with us!"}
-          aria-expanded="false"
-        >
-          Work with us!
-        </Button>
-      </nav>
-
-      <button
-        onClick={onClickMenuItem}
-        className="p-0 m-0 bg-transparent border-0 md:hidden"
-      >
-        <img
-          className="w-10 h-10 rounded-full "
-          src={showMenu ? CloseIcon : MenuIcon}
-        />
-      </button>
-
-      {showMenu && (
-        <div className="fixed z-40 inset-1 top-20">
-          <nav className="flex flex-col items-center gap-12 py-16 mb-3 font-normal text-complementary-green shadow-xl bg-white rounded-3xl backdrop-blur-md ">
-            <a
-              className="no-underline transition-all hover:text-coral hover:font-medium"
-              href="#OurWorks"
-              onClick={onClickMenuItem}
+    <header>
+      <Navbar collapseOnSelect expand="lg" className="bg-transparent">
+        <Container>
+          <Navbar.Brand href="/">
+            <img src={logo} alt="logo" />
+          </Navbar.Brand>
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+          <Navbar.Collapse id="responsive-navbar-nav">
+            <Nav
+              className={`${
+                isLarge ? `ms-auto gap-2` : "mx-auto text-center py-3 gap-3"
+              } d-flex align-items-center`}
             >
-              Startups
-            </a>
-            <a
-              className="no-underline transition-all hover:text-coral hover:font-medium"
-              href="#Contact"
-              onClick={onClickMenuItem}
-            >
-              Contact
-            </a>
-
-            <Button
-              type={"button"}
-              state={"secondary"}
-              name={"Work with us!"}
-              aria-expanded="false"
-            >
-              Work with us!
-            </Button>
-          </nav>
-        </div>
-      )}
-
-      {}
+              {menuItems.map((item, index) => {
+                if (item.type === "link") {
+                  return (
+                    <Nav.Link key={index} href={item.url} className="text-dark">
+                      {item.text}
+                    </Nav.Link>
+                  );
+                } else if (item.type === "button") {
+                  return (
+                    <Nav.Link key={index}>
+                      <CustomButton
+                        type={"button"}
+                        state={item.metadata.state}
+                        onClick={item.onClick}
+                        size={"md"}
+                        name={item.text}
+                        aria-expanded="false"
+                      >
+                        {item.text}
+                      </CustomButton>
+                    </Nav.Link>
+                  );
+                }
+              })}
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
     </header>
   );
 };
