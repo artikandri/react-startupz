@@ -1,16 +1,20 @@
-import React, { useEffect, useState } from "react";
-import heroArt from "@/assets/images/hero.png";
+import React, { useEffect } from "react";
 import { animationOnHeroMounted } from "@/utils/animations";
 import CustomButton from "@/components/CustomButton";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import $ from "jquery";
 import "./index.scss";
 
 const Hero = () => {
   useEffect(() => {
     animationOnHeroMounted();
   });
+
+  const onSeeOurWorksButtonClick = () => {
+    $("#OurWorks").get(0).scrollIntoView({ behavior: "smooth" });
+  };
 
   return (
     <>
@@ -28,6 +32,7 @@ const Hero = () => {
               state={"primary"}
               size={"md"}
               name={"See our works"}
+              onClick={onSeeOurWorksButtonClick}
               className={"cta"}
               aria-expanded="false"
             >

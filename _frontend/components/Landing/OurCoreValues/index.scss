@@ -1,21 +1,19 @@
-@import "@/styles/variables";
+@import "@/styles/_variables";
 
-.landing-wwa {
-  &__title {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+.landing-ocv {
+  &-title {
+    margin-bottom: 5rem;
 
-    > img {
-      max-width: 75px;
+    .lamp-icon {
+      height: 90px;
     }
   }
 
-  &__list {
+  &-list {
     &__item {
       .index {
         position: relative;
-        margin-bottom: 1rem;
+        margin-bottom: 3rem;
 
         &::after {
           content: "";
@@ -24,7 +22,7 @@
           background-color: map-get($map: $theme-colors, $key: dark);
           display: inline-block;
           position: absolute;
-          bottom: -5px;
+          bottom: -1.5rem;
           left: 0;
         }
       }

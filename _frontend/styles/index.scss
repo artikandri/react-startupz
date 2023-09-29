@@ -3,6 +3,7 @@
 @import "./_mixins";
 @import "./_animations";
 
+@include padding("y", 90);
 @include padding("y", 140);
 @include padding("y", 172);
 

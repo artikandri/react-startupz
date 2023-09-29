@@ -37,3 +37,37 @@
     }
   }
 }
+
+@mixin margin($key, $value) {
+  @if $key == "left" {
+    .ms-#{$value} {
+      margin-left: #{$value}px;
+    }
+  } @else if $key == "right" {
+    .me-#{$value} {
+      margin-right: #{$value}px;
+    }
+  } @else if $key == "top" {
+    .mt-#{$value} {
+      margin-top: #{$value}px;
+    }
+  } @else if $key == "bottom" {
+    .mb-#{$value} {
+      margin-bottom: #{$value}px;
+    }
+  } @else if $key == "x" {
+    .mx-#{$value} {
+      margin-left: #{$value}px;
+      margin-right: #{$value}px;
+    }
+  } @else if $key == "y" {
+    .my-#{$value} {
+      margin-top: #{$value}px;
+      margin-bottom: #{$value}px;
+    }
+  } @else {
+    .m-#{$value} {
+      margin: #{$value}px;
+    }
+  }
+}

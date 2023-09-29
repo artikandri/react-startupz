@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import AssistantImage from "@/assets/images/assistant.png";
 import CloseIcon from "@/assets/images/close.svg";
-import ChatBot from "./ChatBot/ChatBot";
+import ChatBot from "@/components/ChatBot/ChatBot";
 import Button from "react-bootstrap/Button";
+import "./index.scss";
 
 const ChatPopup = () => {
   return (
-    <div className="">
+    <div className="chat-popup">
       <p>
         Hi! I am Ben, your virtual assistant. <br /> How can I make your day
         better?
@@ -32,22 +33,29 @@ const ChatButton = () => {
   };
 
   return (
-    <div className="sticky-bottom text-end me-5 mb-5">
+    <div className="fixed-bottom chat-button-container">
       <div
-        className={` ${showPopup ? "--active" : "--inactive"}`}
+        className={` ${showPopup ? "--active" : "--inactive"} chat-button `}
         title="Chat button"
         onMouseOver={handleMouseOver}
         onMouseOut={handleMouseOut}
       >
         {!showPopup && isHovering && <ChatPopup />}
+        {/* <ChatPopup /> */}
         <Button
           onClick={togglePopup}
-          className={` ${showPopup ? "" : ""}`}
+          variant={"light"}
+          className={` ${showPopup ? "" : ""} chat-button`}
           aria-label={showPopup ? "Close chat" : "Open chat"}
         >
           <img className="" src={AssistantImage} />
         </Button>
-        <div className="">{showPopup && <ChatBot />}</div>
+        {showPopup && (
+          <button className="chat-button__close" onClick={togglePopup}>
+            <img src={CloseIcon} />
+          </button>
+        )}
+        <div className="chatbot-window">{showPopup && <ChatBot />}</div>
       </div>
     </div>
   );

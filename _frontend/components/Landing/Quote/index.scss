@@ -1,6 +1,6 @@
 @import "@/styles/_variables";
 
-.landing-wlsp {
+.landing-quote {
   overflow: hidden;
   word-break: break-word;
 
@@ -20,6 +20,7 @@
 
       @media screen and (max-width: map-get($map: $container-max-widths, $key: md)) {
         left: calc(50% - 130px);
+        bottom: unset;
         bottom: calc(100% + 10px);
       }
     }

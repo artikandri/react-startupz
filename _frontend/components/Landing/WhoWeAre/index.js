@@ -22,7 +22,7 @@ const WhoWeAre = () => {
     <div className="bg-light-gray landing-wwa py-140">
       <Container>
         <Row>
-          <Col>
+          <Col className="mb-5">
             <div className="landing-wwa__title">
               <h2 className="text-dark fw-bold fs-2">Who we are</h2>
               <img src={questionMark} className="question-mark" />
@@ -42,10 +42,10 @@ const WhoWeAre = () => {
                 md="4"
                 className="fs-3-5 landing-wwa__list__item"
               >
-                <span className="text-primary-orange fw-bold index">
+                <span className="text-primary-orange fw-bold index d-inline-block">
                   {"0" + (index + 1)}
                 </span>
-                <p className="text-dark"> {item.text}</p>
+                <p className="text-dark mt-2"> {item.text}</p>
               </Col>
             );
           })}

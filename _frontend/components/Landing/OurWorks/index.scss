@@ -1,0 +1,40 @@
+@import "@/styles/_variables";
+
+.landing-ow {
+  &__card {
+    box-shadow: 0px 8px 35px rgba(187, 168.92, 141.81, 0.15);
+    margin-bottom: 20px;
+
+    &.card {
+      border-radius: 30px !important;
+      border-width: 0 !important;
+      padding: 45px;
+    }
+
+    .card-body {
+      padding: 0;
+      min-height: 350px;
+      margin-top: 1rem;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-bottom: 1rem;
+
+      @media screen and (max-width: map-get($map: $container-max-widths, $key: lg)) {
+        min-height: 250px;
+      }
+    }
+
+    .card-img-top {
+      max-height: 300px;
+      width: unset;
+    }
+
+    &-button {
+      width: fit-content;
+      text-align: center;
+      margin: auto;
+    }
+  }
+}

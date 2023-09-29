@@ -1,0 +1,38 @@
+@import "@/styles/_variables";
+
+.landing-hiring {
+  position: relative;
+  &::before,
+  &::after {
+    content: "";
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    display: block;
+    top: 25%;
+    height: 50%;
+    width: 100%;
+    z-index: 0;
+
+    @media screen and (max-width: map-get($container-max-widths, "md")) {
+      opacity: 0.25;
+    }
+  }
+
+  &::before {
+    background-image: url("@/assets/images/leftman.png");
+    left: 0;
+    background-position: left center;
+  }
+
+  &::after {
+    background-image: url("@/assets/images/rightman.png");
+    right: 0;
+    background-position: right center;
+  }
+
+  .container {
+    position: relative;
+    z-index: 1;
+  }
+}

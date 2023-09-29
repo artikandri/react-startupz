@@ -1,15 +1,15 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
-import heroArt from "@/assets/images/hero.png";
 import CustomButton from "@/components/CustomButton";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import "./index.scss";
 
 const NotFound = () => {
   return (
     <>
-      <Container>
+      <Container className="not-found">
         <Row>
           <Col md="6">
             <h1 className="title text-dark fw-bold fs-1">
