@@ -9,8 +9,9 @@
     }
   ],
   "scripts": {
-    "jekyll-dev": "bin/jekyll-vite wait && bundle exec jekyll serve --livereload",
-    "dev": "bin/vite dev",
+    "dev": "exe/dev",
+    "dev-vite": "bin/vite dev",
+    "dev-jekyll": "bin/jekyll-vite wait && bundle exec jekyll serve --livereload",
     "build": "bundle exec jekyll build",
     "lint": "eslint --ext .js,.jsx --ignore-path .gitignore --fix _frontend",
     "lint:fix": "prettier .  --write"
@@ -35,7 +36,6 @@
     "path": "^0.12.7",
     "postcss": "^8.4.30",
     "prettier": "^3.0.3",
-    "prop-types": "^15.8.1",
     "react-bootstrap": "^2.9.0",
     "react-chatbot-kit": "^2.1.2",
     "react-responsive": "^9.0.2",
@@ -53,7 +53,6 @@
     "@babel/preset-env": "^7.22.20",
     "@babel/preset-react": "^7.22.15",
     "@dhaiwat10/react-link-preview": "^1.15.0",
-    "@reduxjs/toolkit": "^1.9.6",
     "@vitejs/plugin-react": "^4.1.0",
     "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
