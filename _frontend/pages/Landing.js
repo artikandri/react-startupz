@@ -30,10 +30,10 @@ const Landing = () => {
         <OurCoreValues />
       </FadeInSection>
       <FadeInSection>
-        <OurWorks />
-      </FadeInSection>
-      <FadeInSection>
-        <Quote />
+        <>
+          <OurWorks />
+          <Quote />
+        </>
       </FadeInSection>
       <FadeInSection>
         <Hiring />

@@ -3,7 +3,7 @@ import React from "react";
 const ActionProvider = ({ createChatBotMessage, setState, children }) => {
   const handleHello = () => {
     const botMessage = createChatBotMessage(
-      "Hello, what can I help you with today?"
+      "Hello, what can I help you with today?",
     );
 
     setState((prev) => ({

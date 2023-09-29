@@ -1,7 +1,9 @@
-import { defineConfig, transformWithEsbuild } from "vite";
+import { defineConfig } from "vite";
 import RubyPlugin from "vite-plugin-ruby";
 import react from "@vitejs/plugin-react";
 import vitePlugin from "vite-plugin-react-js-support";
+
+import eslintPlugin from "vite-plugin-eslint";
 
 const fs = require("fs");
 
@@ -37,5 +39,6 @@ export default defineConfig({
     RubyPlugin(),
     react({ include: /\.(mdx|js|jsx|ts|tsx)$/ }),
     vitePlugin([], { jsxInject: true }),
+    eslintPlugin(),
   ],
 });

@@ -13,11 +13,11 @@ export function splitTextOnReadyElement(selector) {
   var textWrapper = document.querySelector(selector);
   textWrapper.innerHTML = textWrapper.textContent.replace(
     /\S/g,
-    "<span class='letter'>$&</span>"
+    "<span class='letter'>$&</span>",
   );
 }
 
-export function animationOnHeroMounted(options = {}) {
+export function animationOnHeroMounted() {
   splitTextOnReadyElement(".landing-hero .title");
   splitTextOnReadyElement(".landing-hero .subtitle");
 
