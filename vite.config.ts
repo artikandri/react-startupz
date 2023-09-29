@@ -3,8 +3,6 @@ import RubyPlugin from "vite-plugin-ruby";
 import react from "@vitejs/plugin-react";
 import vitePlugin from "vite-plugin-react-js-support";
 
-import eslintPlugin from "vite-plugin-eslint";
-
 const fs = require("fs");
 
 export default defineConfig({
@@ -30,15 +28,9 @@ export default defineConfig({
       ],
     },
   },
-  css: {
-    postcss: {
-      plugins: [],
-    },
-  },
   plugins: [
     RubyPlugin(),
     react({ include: /\.(mdx|js|jsx|ts|tsx)$/ }),
     vitePlugin([], { jsxInject: true }),
-    eslintPlugin(),
   ],
 });

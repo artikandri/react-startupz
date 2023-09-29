@@ -5,6 +5,10 @@ module.exports = {
   root: true,
   parserOptions: {
     sourceType: "module",
+    ecmaFeatures: {
+      jsx: true,
+      modules: true,
+    },
     parser: "babel-eslint",
     ecmaVersion: 2015,
   },
