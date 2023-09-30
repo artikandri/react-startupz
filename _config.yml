@@ -1,5 +1,5 @@
 email: argikartika@gmail.com
-title: Startupz - We create Startupz.
+title: Startupz - We create start ups.
 description: >
   Startupz is a startup studio that develops and launches new companies.
 baseurl: "/"
@@ -9,7 +9,6 @@ plugins:
   - jekyll/vite
   - jekyll-seo-tag
 permalink: /404.html
-# Build settings
 markdown: kramdown
 source: src
 destination: public

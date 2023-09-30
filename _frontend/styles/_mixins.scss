@@ -1,9 +1,3 @@
-@mixin media-query($device) {
-  @media screen and (max-width: $device) {
-    @content;
-  }
-}
-
 @mixin padding($key, $value) {
   @if $key == "left" {
     .ps-#{$value} {
