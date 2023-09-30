@@ -1,13 +1,4 @@
-import $ from "jquery";
 import anime from "animejs";
-
-export function fadeInOnReadyElement(selector) {
-  $(document).ready(function () {
-    $(selector).each(function (i) {
-      $(this).animate({ opacity: "1" }, 1000);
-    });
-  });
-}
 
 export function splitTextOnReadyElement(selector) {
   var textWrapper = document.querySelector(selector);
@@ -40,7 +31,7 @@ export function animationOnHeroMounted() {
       delay: (el, i) => 20 * (i + 1),
     })
     .add({
-      targets: ".cta",
+      targets: ".landing .cta",
       opacity: [0, 1],
       easing: "easeInOutQuad",
       duration: 900,
