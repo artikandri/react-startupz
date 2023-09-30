@@ -32,7 +32,7 @@ function ContactUs() {
         pauseOnHover: true,
         draggable: true,
         theme: "light",
-      }
+      },
     );
   };
 

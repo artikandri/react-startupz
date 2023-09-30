@@ -13,7 +13,7 @@ import { LinkPreview } from "@dhaiwat10/react-link-preview";
 const Landing = () => {
   const url = import.meta.env.VITE_BASE_URL;
   return (
-    <>
+    <div className="landing">
       {import.meta.env === "PRODUCTION" && (
         <LinkPreview url={url} width="400px" />
       )}
@@ -30,16 +30,16 @@ const Landing = () => {
         <OurCoreValues />
       </FadeInSection>
       <FadeInSection>
-        <OurWorks />
-      </FadeInSection>
-      <FadeInSection>
-        <Quote />
+        <>
+          <OurWorks />
+          <Quote />
+        </>
       </FadeInSection>
       <FadeInSection>
         <Hiring />
       </FadeInSection>
       <ContactUs />
-    </>
+    </div>
   );
 };
 

@@ -96,6 +96,7 @@ const Footer = () => {
                       href={socialMedia.url}
                       className="link-primary"
                       target="_blank"
+                      rel="noreferrer"
                     >
                       <img src={socialMedia.icon} />
                     </a>
